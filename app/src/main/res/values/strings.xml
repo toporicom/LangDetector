@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Определитель языка</string>
+
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login_button">Войти</string>
+
+    <string name="name">Разработала: Королева Виктория, РИБО–02–23</string>
+    <string name="task">Тема курсовой: Определитель языка</string>
+
+    <string name="empty_fields">Поля не могут быть пустыми</string>
+    <string name="not_responding">Сервер не отвечает</string>
+    <string name="incorrect_login_or_password">Неверный логин или пароль</string>
+
+    <string name="enterApp">Войдите в приложение</string>
+    <string name="login_error">Ошибка при входе</string>
+    <string name="text_detector_tv">Введите текст для определения языка</string>
+    <string name="lang_hint_et">Введите текст</string>
+    <string name="detect_text_btn">Определить язык</string>
+    <string name="detected_text_tv">Определённый язык:</string>
+    <string name="positive_btn_text">ОК</string>
+    <string name="share_lang_text">Поделиться языком:</string>
+</resources>

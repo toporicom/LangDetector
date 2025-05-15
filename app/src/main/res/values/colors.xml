@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="crimson">#d91e36</color>
+    <color name="dark_crimson">#B4182D</color>
+    <color name="darkest_crimson">#240005</color>
+    <color name="light_crimson">#D71D36</color>
+    <color name="dark_amaranth">#FD8793</color>
+    <color name="amaranth">#FBB3BB</color>
+    <color name="error">#FF0000</color>
+    <color name="lightGrey">#B9B9B9</color>
+    <color name="slightGrey">#666666</color>
+</resources>
