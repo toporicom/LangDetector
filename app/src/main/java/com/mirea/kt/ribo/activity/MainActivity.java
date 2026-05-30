@@ -1,4 +1,4 @@
-package com.mirea.kt.ribo;
+package com.mirea.kt.ribo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.mirea.kt.ribo.runnable.HTTPRunnable;
+import com.mirea.kt.ribo.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,10 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String server = "https://android-for-students.ru";
-        String serverPath = "/coursework/login.php";
-        //login = "Student571196";
-        //password = "TMWS9C";
+        String server = "https://android-for-students.ru/coursework/login2026.php";
 
         Button logButton = findViewById(R.id.login_button);
         TextView errorTV = findViewById(R.id.logError);
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 login = loginET.getText().toString();
                 password = passwordET.getText().toString();
-                group = "RIBO-02-23";
+                group = "RIBO-03-24";
 
                 Log.i("Login", login);
                 Log.i("Password", password);
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 map.put("pwd", password);
                 map.put("g", group);
 
-                HTTPRunnable httpRunnable = new HTTPRunnable(server + serverPath, map);
+                HTTPRunnable httpRunnable = new HTTPRunnable(server, map);
                 Thread th = new Thread(httpRunnable);
                 th.start();
 
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                         errorTV.setVisibility(View.GONE);
 
-                        Intent loadingPageIntent = new Intent(this, LangDetector.class);
+                        Intent loadingPageIntent = new Intent(this, HolderActivity.class);
                         startActivity(loadingPageIntent);
                     } catch (JSONException e) {
                         Log.i("MainActivityError", "Error, invalid login or pass");

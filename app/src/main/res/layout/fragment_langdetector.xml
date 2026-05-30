@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LangDetector">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.LangDetectorFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_margin="20sp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:layout_marginTop="20sp"
-            android:background="@drawable/edit_text_border_hard"
+            android:background="@drawable/edit_text_border_2"
             android:hint="@string/lang_hint_et"
             android:padding="5sp" />
 
@@ -44,4 +45,15 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_margin="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+ />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

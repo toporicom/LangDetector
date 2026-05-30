@@ -5,7 +5,7 @@
     <string name="password">Пароль</string>
     <string name="login_button">Войти</string>
 
-    <string name="name">Разработала: Королева Виктория, РИБО–02–23</string>
+    <string name="name">Разработал: Костенко Глеб Николаевич \n Группа: РИБО–03–24</string>
     <string name="task">Тема курсовой: Определитель языка</string>
 
     <string name="empty_fields">Поля не могут быть пустыми</string>
@@ -14,10 +14,10 @@
 
     <string name="enterApp">Войдите в приложение</string>
     <string name="login_error">Ошибка при входе</string>
-    <string name="text_detector_tv">Введите текст для определения языка</string>
-    <string name="lang_hint_et">Введите текст</string>
-    <string name="detect_text_btn">Определить язык</string>
-    <string name="detected_text_tv">Определённый язык:</string>
+    <string name="text_detector_tv">Введите слово для получения информации</string>
+    <string name="lang_hint_et">Введите слово</string>
+    <string name="detect_text_btn">Получить информацию</string>
+    <string name="detected_text_tv">Полученная информация:</string>
     <string name="positive_btn_text">ОК</string>
-    <string name="share_lang_text">Поделиться языком:</string>
+    <string name="share_lang_text">Поделиться информацией:</string>
 </resources>
